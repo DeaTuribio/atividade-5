@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="http://www.cps.sp.gov.br/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega-Sena</title>
+  </head>
+  <body>
+    <main class="page">
+      <section class="panel">
+        <div>
+          <h1>Mega-Sena</h1>
+          <p>Consulte o último resultado ou busque pelo número do concurso.</p>
+        </div>
+
+        <form class="search" id="search-form">
+          <label for="concurso-input">Concurso</label>
+          <div class="search-row">
+            <input
+              id="concurso-input"
+              name="concurso"
+              inputmode="numeric"
+              placeholder="Ex: 2840"
+            />
+            <button type="submit" id="button-search ">Buscar</button>
+          </div>
+        </form>
+
+        <section class="result" id="result">
+          <article class="draw">
+            <header class="draw-header">
+              <div>
+                <h2 class="draw-title">Concurso 9999</h2>
+                <span class="draw-date">99/99/9999</span>
+              </div>
+              <strong> Acumulou </strong>
+            </header>
+
+            <ul class="balls">
+              <li class="ball">10</li>
+              <li class="ball">20</li>
+              <li class="ball">30</li>
+              <li class="ball">40</li>
+              <li class="ball">50</li>
+              <li class="ball">60</li>
+            </ul>
+            <div class="details">
+              <div class="detail">
+                <strong>6 acertos</strong>
+                0 ganhador(es), R$ 0,00
+              </div>
+              <div class="detail">
+                <strong>5 acertos</strong>
+                0 ganhador(es), R$ 0,00
+              </div>
+              <div class="detail">
+                <strong>4 acertos</strong>
+                0 ganhador(es), R$ 0,00
+              </div>
+              <div class="detail">
+                <strong>Estimativa</strong>
+                R$ 0,00
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
