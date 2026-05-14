@@ -64,6 +64,12 @@ async function run() {
       const values = parseCSVLine(line);
       const processedValues = values.map(v => v === 'NULL' || v.trim() === '' ? null : v.trim());
       
+      // Converte data DD/MM/YYYY para YYYY-MM-DD
+      if (processedValues[1] && processedValues[1].includes('/')) {
+        const [day, month, year] = processedValues[1].split('/');
+        processedValues[1] = `${year}-${month}-${day}`;
+      }
+      
       const query = `
         INSERT INTO megasena (
           concurso, data_do_sorteio, bola1, bola2, bola3, bola4, bola5, bola6, 
